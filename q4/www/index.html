@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Fakestagram</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
+    <link rel="stylesheet" href="css/design.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+    <div id="overlay" onclick="off()">
+      <div id="contents">
+
+        <div id="imagesection">
+          <img id="myImage" src=""/>
+        </div>
+
+        <div id="text">
+
+          <div id="postinfo">
+            <div id="posteravatarcontainer">
+              <img id="user1avatar" src="img/avatar1.jpg" alt="user1 avatar"/>
+            </div>
+            <div id="information">
+              <p id="user1username">naturepix</p>
+              <p id="location">Nagano Prefecture, Japan</p>
+            </div>
+          </div>
+
+          <div id="commentsection">
+            <div id="commenter1">
+              <div id="avatarcontainer">
+                <img id="user1avatar" src="img/avatar1.jpg"/>
+              </div>
+              <div id="commentcontainer">
+                <p id="user1username">naturepix</p>
+                <p id="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                <p id="time">13m</p>
+              </div>
+            </div>
+
+            <div id="commenter2">
+              <div id="avatarcontainer">
+                <img id="user2avatar" src="img/avatar2.jpg"/>
+              </div>
+              <div id="commentcontainer">
+                <p id="user2username">fake_user2</p>
+                <p id="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                <p id="time">13m Reply</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="iconarea">
+            <div id="iconcontainer">
+              <table id="icontable">
+                <tr>
+                  <td>
+                    <i class="fa fa-heart-o fa-2x" aria-hidden="true">
+                  </td>
+
+                  <td>
+                    <i class="fa fa-comment-o fa-2x" aria-hidden="true">
+                  </td>
+
+                  <td>
+                    <i class="fa fa-share-square-o fa-2x" aria-hidden="true">
+                  </td>
+
+                  <td id="bookmark">
+                    <i class="fa fa-bookmark-o fa-2x" aria-hidden="true">
+                  </td>
+                </tr>
+              </table>
+              <div id="likestime">
+                <p>225 Likes</p>
+                <p id="timeposted">13 minutes ago</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <header>
+      <div id="avatar-box">
+        <img id="avatar" src="img/avatar1.jpg" alt="Avatar">
+      </div>
+      <div id="info-box">
+        <p id="username">naturepix</p>
+        <p id="bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="image-box" onclick="on('img/aaron-burden-GVnUVP8cs1o-unsplash.jpg')">
+        <img class="image" src="img/aaron-burden-GVnUVP8cs1o-unsplash.jpg" alt="aaron burden">
+      </div>
+      <div class="image-box" onclick="on('img/amanda-phung-1w2xsyc2wwI-unsplash.jpg')">
+        <img class="image" src="img/amanda-phung-1w2xsyc2wwI-unsplash.jpg" alt="amanda phung">
+      </div>
+      <div class="image-box" onclick="on('img/annie-spratt-KCQz_b2Hgi8-unsplash.jpg')">
+        <img class="image" src="img/annie-spratt-KCQz_b2Hgi8-unsplash.jpg" alt="annie spratt">
+      </div>
+      <div class="image-box" onclick="on('img/casey-horner-4rDCa5hBlCs-unsplash.jpg')">
+        <img class="image" src="img/casey-horner-4rDCa5hBlCs-unsplash.jpg" alt="casey horner">
+      </div>
+      <div class="image-box" onclick="on('img/ivana-cajina-MBkQKiH14ng-unsplash.jpg')">
+        <img class="image" src="img/ivana-cajina-MBkQKiH14ng-unsplash.jpg" alt="ivana cajina">
+      </div>
+      <div class="image-box" onclick="on('img/joey-kyber-sFLVTqNzG2I-unsplash.jpg')">
+        <img class="image" src="img/joey-kyber-sFLVTqNzG2I-unsplash.jpg" alt="joey kyber">
+      </div>
+      <div class="image-box" onclick="on('img/justin-kauffman-a8lTjWJJgLA-unsplash.jpg')">
+        <img class="image" src="img/justin-kauffman-a8lTjWJJgLA-unsplash.jpg" alt="justin kauffman">
+      </div>
+      <div class="image-box" onclick="on('img/luca-bravo-ny6qxqv_m04-unsplash.jpg')">
+        <img class="image" src="img/luca-bravo-ny6qxqv_m04-unsplash.jpg" alt="luca bravo">
+      </div>
+      <div class="image-box" onclick="on('img/lukasz-szmigiel-jFCViYFYcus-unsplash.jpg')">
+        <img class="image" src="img/lukasz-szmigiel-jFCViYFYcus-unsplash.jpg" alt="lukasz szmigiel">
+      </div>
+      <div class="image-box" onclick="on('img/redcharlie-k2zWqv_yfNM-unsplash.jpg')">
+        <img class="image" src="img/redcharlie-k2zWqv_yfNM-unsplash.jpg" alt="red charlie">
+      </div>
+      <div class="image-box" onclick="on('img/shifaaz-shamoon-oR0uERTVyD0-unsplash.jpg')">
+        <img class="image" src="img/shifaaz-shamoon-oR0uERTVyD0-unsplash.jpg" alt="shifaaz shamoon">
+      </div>
+      <div class="image-box" onclick="on('img/sora-sagano-Dksk8szLRN0-unsplash.jpg')">
+        <img class="image" src="img/sora-sagano-Dksk8szLRN0-unsplash.jpg" alt="sora sagano">
+      </div>
+      <div class="image-box" onclick="on('img/vincent-van-zalinge-_d0zgyMmYT8-unsplash.jpg')">
+        <img class="image" src="img/vincent-van-zalinge-_d0zgyMmYT8-unsplash.jpg" alt="vincent van zalinge 1">
+      </div>
+      <div class="image-box" onclick="on('img/vincent-van-zalinge-vUNQaTtZeOo-unsplash.jpg')">
+        <img class="image" src="img/vincent-van-zalinge-vUNQaTtZeOo-unsplash.jpg" alt="vincent van zalinge 2">
+      </div>
+      <div class="image-box" onclick="on('img/westboundary-photography-chris-gill-lBL7rSRaNGs-unsplash.jpg')">
+        <img class="image" src="img/westboundary-photography-chris-gill-lBL7rSRaNGs-unsplash.jpg" alt="chris gill">
+      </div>
+    </div>
+
+    <script src="js/fakescript.js"></script>
+  </body>
+</html>
